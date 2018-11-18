@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-rental-detail',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rental-detail.component.scss']
 })
 export class RentalDetailComponent implements OnInit {
+  public currentId: string;
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activatedRoute.params.subscribe(
+      (params) => {
+        this.currentId = params['rentalId'];
+        console.log(params)
+      }
+    )
   }
 
 }
