@@ -1,3 +1,5 @@
-<p>
-  {{ rental | json }}
-</p>
+<div *ngIf="!!rental">
+  <pre>
+        {{ rental | json }}
+      </pre>
+</div>
