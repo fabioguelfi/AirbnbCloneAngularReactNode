@@ -15,33 +15,33 @@ export class RentalListComponent implements OnInit {
     image: 'http://via.placeholder.com/350x250',
     bedrooms: 3,
     description: 'very nive apartament',
-    daileRate: 34,
+    dayleRate: 34,
     shared: false,
     createdAt: '24/12/2017'
   },
   {
     id: 2,
     title: 'central apartament 2',
-    city: 'new york',
+    city: 'los angeles',
     street: 'Times square',
     category: 'Apartament',
     image: 'http://via.placeholder.com/350x250',
     bedrooms: 3,
     description: 'very nive apartament',
-    daileRate: 34,
+    dayleRate: 34,
     shared: false,
     createdAt: '24/12/2017'
   },
   {
     id: 3,
     title: 'central apartament 3',
-    city: 'new york',
+    city: 'north carolina',
     street: 'Times square',
     category: 'Apartament',
     image: 'http://via.placeholder.com/350x250',
     bedrooms: 3,
     description: 'very nive apartament',
-    daileRate: 34,
+    dayleRate: 34,
     shared: false,
     createdAt: '24/12/2017'
   }]
