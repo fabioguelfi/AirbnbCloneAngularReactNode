@@ -37,6 +37,10 @@ class FakeDb {
         }]
     }
 
+    async cleanDB() {
+        await Rental.remove({});
+    }
+
     pushRentalsRoDB() {
         this.rentals.forEach(rental => {
             const newRental = new Rental(rental);
@@ -45,6 +49,7 @@ class FakeDb {
     }
 
     seedDB() {
+        this.cleanDB();
         this.pushRentalsRoDB();
     }
 }
