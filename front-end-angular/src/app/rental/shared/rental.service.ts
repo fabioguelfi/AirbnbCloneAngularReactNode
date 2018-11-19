@@ -13,12 +13,12 @@ export class RentalService {
     }
 
       public getRentalById(rentalId: string): Observable<Rental> {
-          return this.httpClient.get(`localhost:3007/api/v1/rentals/${rentalId}`)
+          return this.httpClient.get(`/api/v1/rentals/${rentalId}`)
           .pipe(map((rental: Rental) => rental));
       }
 
       public getRentals(): Observable<Rental[]> {
-        return this.httpClient.get('localhost:3007/api/v1/rentals')
+        return this.httpClient.get('/api/v1/rentals')
         .pipe(map((rentals: Rental[]) => rentals));
       }
 }
