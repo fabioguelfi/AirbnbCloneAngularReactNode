@@ -8,6 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RentalDetailComponent } from './rental-detail/rental-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgPipesModule } from 'ngx-pipes';
+import { UppercasePipe } from '../common/pipes/uppercase.pipe';
 
 const routes: Routes = [
     { 
@@ -25,7 +26,8 @@ const routes: Routes = [
         RentalListComponent,
         RentalListItemComponent,
         RentalComponent,
-        RentalDetailComponent
+        RentalDetailComponent,
+        UppercasePipe
     ],
     imports: [
         CommonModule,
